@@ -1,0 +1,2 @@
+web: gunicorn server:app --log-file=-
+worker: celery worker --app=app.worker.william --loglevel=info --without-gossip --without-mingle --without-heartbeat

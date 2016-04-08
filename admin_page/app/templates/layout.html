@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tower - Admin</title>
+    {% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}"></link>
+    {% endblock %}
+    {% block javascript %}
+    <script src="{{ url_for('static', filename='javascripts/user_property.js') }}"></script>
+    {% endblock %}
+</head>
+<body>
+    <div id="div_root" class="class_div">
+        <div id="div_top" class="class_div">관리자 페이지</div>
+        <div id="div_menu" class="class_div">
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="/admin/user"><span>User</span></a></li>
+                    <li><a href="/admin/mail"><span>Mail</span></a></li>
+                    <li><a href="/admin/notice"><span>Notice</span></a></li>
+                    <li><a href="/admin/upload-data"><span>Upload data</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="div_content" class="class_div">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="div_bottom" class="class_div"></div>
+        </div>
+    </body>
+</html>

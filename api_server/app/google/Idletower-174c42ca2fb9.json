@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "idletower",
+  "private_key_id": "174c42ca2fb942af2a85f72183907e4adc18ff62",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnl00J33xW2dLy\nfGqgHBjzNsUGwM0MIlWNqFjEip8YkeXBSlFdL9R2GUUYi2R8F2GW8lM4ZqCOSAfh\nVLWI07jmr1CccRw2aLLlBOksWpr0i543dzJCFRXpX68fKtFDE8pXHu685H7o3hn8\n17BLLGrawegFuiOlA+4c+rGragyQhvZP1BLLW+W2yfY5DraW2ttDtq0lxlfkhuKK\nAgatoga5RxRBnNomy4f6ONi+/wTA80XrlNb0Ir82U1fHRysFdAllaVGZZzDhsZhM\nx1Q1U82RSjRMqLftAXLr6dttYdtWxVFhLRShL9R6aSQvPO36mrvinfjlVeq+JiVY\nXbAPuWt1AgMBAAECggEANBmvU4Bs0TtKfyP6qefSQdonCmBp3nnWCwHpBsDpkOPa\nf2qxPL0f2c8lUeoTxRgnuJuBD6moBFOUT5LcFLttYhnif6ASWz/VTalnK+jG/3tg\nJnIh57VSaIjckl3nTGkcoFT3dzW51n8lqRsMrXITjgp2LUGezzAXmF6/WUDQwyUO\n1Vt2T3cknC5Y0nvEgzg7gSlBJZ2uuJnO7MTg5xx+xDIKNcZg06tua1ZpsM89gEun\nMVdhqnzyNcz0iDaqdfI7mQBbYUl7cX2zi6Y2C1EF/k7LaihTKY8vRPVQLk5bxNm2\noosErJqfa/LigyX373jd3kFfy2nknUd091SZr8u9gQKBgQD6ZtlqomEn9iaJ30Mz\nZm7Uz8YKg65PXZOL89fW/AV53agxd6WGqqHeFO7F6GWzZHUaaEjGDkm+jafjx93r\nP0ipkr0E6gJVsl618+4HQSYVyxs4L6cQBpapqwDC4LVkB2gCt2nf1qWXGSNXQ0sZ\ndl+RIZVOsyIY4/O+sV6n0oIakQKBgQCrVn4EEv9dPISAKv7Qx0S2ckWYntd4TViE\nkT3kdFobnPYVBrklkl/eO1/fogpMd35AdXfnwvWd8EaaGva5EboRjWpHL6Wh4EZ7\nZbfuhV3gMROycfMJ6KY7xPyh/Zn4KWyxfxiVOFEk2Ik+aJvfJ1Cvx0z+K793mHSq\nd+7cW2eMpQKBgQDqpw0hr6+KSlLNKwsHlPtRtK+q1MG5oECPi1/+GEhtbnmaebwF\nWcu8mTM1BVag6QgQSh/Ack1LI+ZsP7VIKhLGzjsR6tVrR28X5dJuu++bxqzoV0eg\nbfwsXZKmDPwPFB21RfoSiEy/LxB+SxKKdvKRx73qdVYDq0KUthS1AkFn8QKBgHbk\nxPtEx4lGZled/kaYEFleQGcgyjpDycnsE3vFNYX1zFlY2f91bCsFHolLo0Peo3BN\nU1Ay3EelpQho744K/AgUDoypRpFm1OHp+tF8IGFjDN0F73WPyFKvZfNuzHoFHNSq\ncj+R3dTooYv6ATe/y2C+tvGlH+74jvR/1vN4Rgm1AoGBAI9yo6044QXhHThmdmxD\noA0gfF2WObsqmIdcGE3bMOcYvds5ffi4g3E6pF/OEKci3czcSj+x6+fqDbAP9VSE\n8TCGj4rxBAK6zGpLjLFRftm16eUn1/W/EYJajWeOKOj/s8ohRzfkzBUywcOHgKOa\ng+b/8hMZM7pryLVEcMzP1BBs\n-----END PRIVATE KEY-----\n",
+  "client_email": "idletower@idletower.iam.gserviceaccount.com",
+  "client_id": "112457254392539478449",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/idletower%40idletower.iam.gserviceaccount.com"
+}

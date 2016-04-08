@@ -1,0 +1,159 @@
+#div_root{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+}
+
+#div_top{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#div_content{
+    width: 900px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#div_listing{
+    width: 800px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#div_menu{
+    width: 200px;
+    float: left;
+}
+
+#div_bottom{
+    clear: both;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+}
+
+#table{
+}
+
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+#div_right{
+}
+
+.class_div{
+}
+
+.user-table  {
+    width: 100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.user-table td{
+    font-family:Arial, sans-serif;
+    font-size:12px;
+    padding:5px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+}
+.user-table th{
+    font-family:Arial, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    padding:5px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+}
+.user-table .column-name{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif !important;;
+    background-color:#ecf4ff;
+    text-align:center;
+    vertical-align:top
+}
+.user-table .column-content{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif !important;;
+    text-align:center;
+    vertical-align:top
+}
+
+#cssmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 12em;
+}
+#cssmenu li {
+    font: 80% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #bcbcbc;
+}
+#cssmenu a {
+    display: block;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+#cssmenu a:hover {
+    background: #2580a2 url("../images/hover.gif") left center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
+#cssmenu a:active {
+    background: #2580a2 url("../images/hover.gif") left center no-repeat;
+}
+
+#select_type{
+    float: left;
+    margin-left: 100px;
+}
+#file_upload{
+    float: right;
+    margin-right: 200px;
+}
+#success-message{
+    font: 80% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    color: blue;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#message{
+    font: 80% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+

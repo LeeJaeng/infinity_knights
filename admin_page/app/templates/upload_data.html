@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<form enctype="multipart/form-data" action="/admin/upload-data", method="POST", id="upload_form">
+    <div id="select_type">
+        Type :
+        <select name="data_type" id="data_type">
+            <optgroup label="Server">
+                <option value="achievement">Achievement Data</option>
+                <option value="adventure">Adventure Data</option>
+                <option value="artifact">Artifact Data</option>
+                <option value="artifact_option">Artifact Option Data</option>
+                <option value="cash_shop">Cash Shop Data</option>
+                <option value="character">Character Data</option>
+                <option value="dungeon_achievement">Dungeon Achievement Data</option>
+                <option value="equipment">Equipment Data</option>
+                <option value="equipment_option">Equipment Option Data</option>
+                <option value="league">League Data</option>
+                <option value="lottery">Lottery Data</option>
+                <option value="reward">Reward Data</option>
+                <option value="stage">Stage Data</option>
+                <option value="constants">Constants Data</option>
+            </optgroup>
+            <option value="client">Other Data</option>
+        </select>
+    </div>
+    <div id="file_upload">
+        <input type="hidden" name="MAX_FILE_SIZE" value="300000"></input>
+        <input type="file" name="file" id="upload_file"></input>
+        <button id="submit_button">Submit</button>
+    </div>
+</form>
+    {% if message %}
+    <div id="success-message">
+        {% if filename.find(data_type) == 0 %}
+        [결과 : {{message}}]<br>
+        [타입 : {{data_type}}]<br>
+        [파일 이름 :  {{filename}}]
+        {% else %}
+        <font color="red">
+        [결과 : 실패!!, 파일이름과 type이 달라서 DB에 들어가지 않았습니다.]<br>
+        [타입 : {{data_type}}]<br>
+        [파일 이름 :  {{filename}}]
+        </font>
+        {% endif %}
+    </div>
+    {% endif %}
+<div id="message">
+    *** 'Other Data' type은 서버의 데이터에 들어가지 않는 데이터 파일입니다.
+</div>
+{% endblock %}

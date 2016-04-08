@@ -1,0 +1,14 @@
+.DS_Store
+.sass-cache
+
+*~
+*.pyc
+*.swp
+
+staticfiles
+
+db.sqlite3
+
+.idea/
+
+venv

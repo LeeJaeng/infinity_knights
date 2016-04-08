@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+전체 유저수 : {{user_num}}명
+<form action="/admin/user/delete-all", method="GET">
+    <button>Delete all</button>
+</form>
+<br>
+<br>
+<div id="table">
+    <table class="user-table" style="undefined;table-layout: fixed; width: 820px">
+        <colgroup>
+            <col style="width: 40px">
+            <col style="width: 100px">
+            <col style="width: 50px">
+            <col style="width: 50px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 60px">
+            <col style="width: 50px">
+            <col style="width: 60px">
+        </colgroup>
+        <tr>
+            <th class="column-name">id</th>
+            <th class="column-name">nickname</th>
+            <th class="column-name">rune stone</th>
+            <th class="column-name">gem</th>
+            <th class="column-name">ancient coin</th>
+            <th class="column-name">honor coin</th>
+            <th class="column-name">group soul stone Elf</th>
+            <th class="column-name">group soul stone Human</th>
+            <th class="column-name">group soul stone Orc</th>
+            <th class="column-name">group soul stone Furry</th>
+            <th class="column-name">adventure slots</th>
+            <th class="column-name">edit</th>
+            <th class="column-name">delete</th>
+        </tr>
+        {% for i in range(pagination.first_object_index, pagination.last_object_index)%}
+        <tr id="user_{{users[i].id}}_property">
+            <td class="column-content" name="user_id">{{users[i].id}}</td>
+            <td class="column-content" name="nickname" contenteditable="true">{{users[i].nickname}}</td>
+            <td class="column-content" name="rune_stone" contenteditable="true">{{users[i].rune_stone}}</td>
+            <td class="column-content" name="gem" contenteditable="true">{{users[i].gem}}</td>
+            <td class="column-content" name="ancient_coin" contenteditable="true">{{users[i].ancient_coin}}</td>
+            <td class="column-content" name="honor_coin" contenteditable="true">{{users[i].honor_coin}}</td>
+            <td class="column-content" name="group_soul_stone_elf" contenteditable="true">{{users[i].group_soul_stone_elf}}</td>
+            <td class="column-content" name="group_soul_stone_human" contenteditable="true">{{users[i].group_soul_stone_human}}</td>
+            <td class="column-content" name="group_soul_stone_orc" contenteditable="true">{{users[i].group_soul_stone_orc}}</td>
+            <td class="column-content" name="group_soul_stone_furry" contenteditable="true">{{users[i].group_soul_stone_furry}}</td>
+            <td class="column-content" name="adventure_slot" contenteditable="true">{{users[i].adventure_slot}}</td>
+            <td class="edit-row">
+               <button id="edit-btn" onclick="request_property_edit({{users[i].id}})">Edit</button>
+            </td>
+            <td class="delete-row">
+               <button id="delete-btn" onclick="request_user_delete({{users[i].id}})">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div id="div_listing">
+        <ul class="pagination">
+            <li><a href="/admin/user?page={{pagination.prev_list}}">&laquo;</a></li>
+            {% for i in range(pagination.list_first_page+1, pagination.list_last_page+1) %}
+            <li><a href="/admin/user?page={{i}}" class="link">{{i}}</a></li>
+            {% endfor %}
+            <li><a href="/admin/user?page={{pagination.next_list}}">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
